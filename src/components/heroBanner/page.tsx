@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import bannerImage from "../../../public/assets/images/Business merger-amico.png";
 import Button from "@/common/button/page";
-import { redirect } from "next/dist/server/api-utils";
 import Link from "next/link";
 
 const HeroBanner = () => {
@@ -28,10 +27,10 @@ const HeroBanner = () => {
           </p>
           <div className="flex gap-4">
             <Link href="/login">
-              <Button children="Get Started" size="lg" />
+              <Button text="Get Started" size="lg" />
             </Link>
             <Link href="#instructions">
-              <Button children="Watch Demo" variant="outline" size="lg" />
+              <Button text="Watch Demo" variant="outline" size="lg" />
             </Link>
           </div>
         </div>

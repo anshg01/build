@@ -1,7 +1,7 @@
 // components/Button.tsx
 
 type ButtonProps = {
-  children: React.ReactNode;
+  text: React.ReactNode;
   onClick?: () => void;
   variant?: "primary" | "secondary" | "danger" | "outline"; // style variations
   size?: "sm" | "md" | "lg"; // size variations
@@ -9,7 +9,7 @@ type ButtonProps = {
 };
 
 export default function Button({
-  children,
+  text,
   onClick,
   variant = "primary",
   size = "md",
@@ -38,7 +38,7 @@ export default function Button({
         disabled ? "opacity-50 cursor-not-allowed" : ""
       }`}
     >
-      {children}
+      {text}
     </button>
   );
 }
